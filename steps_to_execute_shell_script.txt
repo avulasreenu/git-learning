@@ -1,0 +1,85 @@
+Step_1:
+=======
+
+$ vi hoodad
+
+Step_2:
+======
+1. Press enter " i "
+
+#!/bin/bash
+
+echo " I am a hoodad command! "
+
+#END
+
+2.Enter " Esc " 
+
+3.Enter " :wq " 
+
+Step_3:
+=======
+
+$ sudo chmod 755 hoodad
+
+$ cd /
+
+$ hoodad
+
+it shows cmd not found
+
+$ cd ~
+
+$ ./hoodad
+
+============================================================================
+$ cd /
+
+$ hoodad
+
+it shows cmd not found
+
+$ echo $PATH
+
+$ mv ~/hadoop /bin/
+
+mv cannot move '/home/hadoop/hoodad
+
+$ sudo mv ~/hadoop /bin
+
+$ hoodad
+====================================================
+
+$ mkdir ~/testdir
+
+$ sudo mv /bin/hoodad ~/testdir/
+
+$ cd ~/testdir/
+
+$ ls
+
+$ cd ..
+
+$ hoodad
+
+$ ls -a
+
+$ vi .bashrc
+
+you can write:
+
+export PATH=$PATH:/home/hadoop/testdir
+
+start to fresh linux window
+===========================
+
+$ echo $PATH
+
+$ cat .bashrc
+
+$ vi .bashrc
+
+export PATH=/home/hadoop/testdir:$PATH
+
+$ echo $PATH
+

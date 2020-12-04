@@ -1,0 +1,132 @@
+#!/bin/bash
+
+# Data Ingestion
+
+pwd
+
+ls -ltr
+
+mkdir as
+
+cd as
+
+mkdir data
+
+cd data
+
+aws s3 cp s3://konanaveena300/data/full_data.csv .
+
+aws s3 cp s3://konanaveena300/data/locations.csv .
+
+aws s3 cp s3://konanaveena300/data/new_cases.csv .
+
+aws s3 cp s3://konanaveena300/data/new_deaths.csv .
+
+aws s3 cp s3://konanaveena300/data/total_cases.csv .
+
+aws s3 cp s3://konanaveena300/data/total_deaths.csv .
+
+aws s3 cp s3://konanaveena300/data/100_Records.csv .
+
+aws s3 cp s3://konanaveena300/data/hive.txt .
+
+aws s3 cp s3://konanaveena300/data/tri100_table_data.txt .
+
+aws s3 cp s3://konanaveena300/data/Sample-JSON-file-with-multiple-records-download.json .
+
+aws s3 cp s3://konanaveena300/data/Sample-employee-JSON-data.json .
+
+aws s3 cp s3://konanaveena300/data/au-500.csv .
+
+aws s3 cp s3://konanaveena300/data/ca-500.csv .
+
+aws s3 cp s3://konanaveena300/data/uk-500.csv .
+
+aws s3 cp s3://konanaveena300/data/us-500.csv .
+
+aws s3 cp s3://konanaveena300/data/userdata1.parquet .
+
+aws s3 cp s3://konanaveena300/data/userdata2.parquet .
+
+aws s3 cp s3://konanaveena300/data/userdata3.parquet .
+
+aws s3 cp s3://konanaveena300/data/userdata4.parquet .
+
+aws s3 cp s3://konanaveena300/data/userdata5.parquet .
+
+aws s3 cp s3://konanaveena300/Scripts/mysqlsampledatabase.sql .
+
+aws s3 cp s3://konanaveena300/data/sample_1.csv .
+
+aws s3 cp s3://konanaveena300/data/A.txt .
+
+aws s3 cp s3://konanaveena300/data/B.txt .
+
+aws s3 cp s3://konanaveena300/data/sample_data.csv .
+
+
+ls -ltr
+
+pwd
+
+hadoop fs -ls /
+
+hadoop fs -mkdir /an
+
+hadoop fs -ls /
+
+hadoop fs -mkdir /an/data
+
+pwd
+
+hadoop fs -put /home/hadoop/as/data/full_data.csv /an/data
+
+hadoop fs -put /home/hadoop/as/data/locations.csv /an/data
+
+hadoop fs -put /home/hadoop/as/data/new_cases.csv /an/data
+
+hadoop fs -put /home/hadoop/as/data/new_deaths.csv /an/data
+
+hadoop fs -put /home/hadoop/as/data/total_cases.csv /an/data
+
+hadoop fs -put /home/hadoop/as/data/total_deaths.csv /an/data
+
+hadoop fs -put /home/hadoop/as/data/100_Records.csv /an/data
+
+hadoop fs -put /home/hadoop/as/data/hive.txt /an/data
+
+hadoop fs -put /home/hadoop/as/data/tri100_table_data.txt /an/data
+
+hadoop fs -put /home/hadoop/as/data/Sample-JSON-file-with-multiple-records-download.json /an/data
+
+hadoop fs -put /home/hadoop/as/data/Sample-employee-JSON-data.json /an/data
+
+hadoop fs -put /home/hadoop/as/data/au-500.csv /an/data
+
+hadoop fs -put /home/hadoop/as/data/ca-500.csv /an/data
+
+hadoop fs -put /home/hadoop/as/data/uk-500.csv /an/data
+
+hadoop fs -put /home/hadoop/as/data/us-500.csv /an/data
+
+hadoop fs -put /home/hadoop/as/data/userdata1.parquet /an/data
+
+hadoop fs -put /home/hadoop/as/data/userdata2.parquet /an/data
+
+hadoop fs -put /home/hadoop/as/data/userdata3.parquet /an/data
+
+hadoop fs -put /home/hadoop/as/data/userdata4.parquet /an/data
+
+hadoop fs -put /home/hadoop/as/data/userdata5.parquet /an/data
+
+hadoop fs -put /home/hadoop/as/data/mysqlsampledatabase.sql /an/data
+
+hadoop fs -put /home/hadoop/as/data/sample_1.csv /an/data
+
+hadoop fs -put /home/hadoop/as/data/A.txt /an/data
+
+hadoop fs -put /home/hadoop/as/data/B.txt /an/data
+
+hadoop fs -put /home/hadoop/as/data/sample_data.csv /an/data
+
+hadoop fs -ls /an/data/
